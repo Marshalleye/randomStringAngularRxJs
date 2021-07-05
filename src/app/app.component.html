@@ -1,0 +1,12 @@
+<div class="container">
+   <h1>RxJS generate string</h1>
+   <button class="btn" (click)="stop()">Unsubscribe</button>
+   <hr>
+   <hr>
+   <h2 class="stringWindow" [class.none]='zeroToggle' [class.red]='redToggle' [class.blue]='blueToggle'
+      *ngIf="!zeroToggle; else zero">
+      {{final}}</h2>
+   <ng-template #zero><small [class.small]="zeroToggle">Catch zero!</small></ng-template>
+   <hr>
+   <hr>
+</div>
